@@ -14,68 +14,7 @@ class XylophoneApp extends StatelessWidget {
         body: SafeArea(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
-            // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              // TextButton(
-              //   child: Text(''),
-              //   onPressed: () {
-              //     final player = AudioCache();
-              //     player.play('note1.wav');
-              //   },
-              //   style: TextButton.styleFrom(
-              //     backgroundColor: Colors.red
-              //   )
-              // ),
-              // TextButton(
-              //   child: Text(''),
-              //   onPressed: () {
-              //     final player = AudioCache();
-              //     player.play('note2.wav');
-              //   },
-              //   style: TextButton.styleFrom(
-              //     backgroundColor: Colors.orange
-              //   )
-              // ),
-              // TextButton(
-              //   child: Text(''),
-              //   onPressed: () {
-              //     final player = AudioCache();
-              //     player.play('note3.wav');
-              //   },
-              //   style: TextButton.styleFrom(
-              //     backgroundColor: Colors.yellow
-              //   )
-              // ),
-              // TextButton(
-              //   child: Text(''),
-              //   onPressed: () {
-              //     final player = AudioCache();
-              //     player.play('note4.wav');
-              //   },
-              //   style: TextButton.styleFrom(
-              //     backgroundColor: Colors.lightGreen
-              //   )
-              // ),
-              // TextButton(
-              //   child: Text(''),
-              //   onPressed: () {
-              //     final player = AudioCache();
-              //     player.play('note5.wav');
-              //   },
-              //   style: TextButton.styleFrom(
-              //     backgroundColor: Colors.green
-              //   )
-              // ),
-              // TextButton(
-              //   child: Text(''),
-              //   onPressed: () {
-              //     final player = AudioCache();
-              //     player.play('note6.wav');
-              //   },
-              //   style: TextButton.styleFrom(
-              //     backgroundColor: Colors.blue
-              //   )
-              // ),
               createButton(1),
               createButton(2),
               createButton(3),
@@ -89,8 +28,6 @@ class XylophoneApp extends StatelessWidget {
       )
     );
   }
-
-int add() => 5 + 2;
 
   void playSound(int soundNumber) {
     final player = AudioCache();
